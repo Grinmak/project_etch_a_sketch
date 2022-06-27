@@ -1,4 +1,4 @@
-    let gridMult = 4;
+    let gridMult = 100;
     let gridItems = Math.pow(gridMult, 2);
     let gridWidth = Number((100/gridMult).toFixed(2));
 
@@ -20,13 +20,9 @@
     
     allDivs.forEach(div => div.setAttribute('class', 'divs'));
     allDivs.forEach(div => div.setAttribute('style', `min-width: ${gridWidth}%`));
-    //const div = document.getElementbyclass
     allDivs.forEach(div => div.addEventListener('mouseover', changeColor));
 
-    function changeColor (d){
-        console.log(d.srcElement.div);
-      //let divElement = d.srcElement.className;
-      // console.log(typeof divElement);
-       //this.divElement.setAttribute('style', 'background-color: black');
-    }
+    function changeColor (){
+        this.classList.add('changeColor');
+    };
     
