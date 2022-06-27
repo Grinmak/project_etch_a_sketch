@@ -1,0 +1,15 @@
+.mainArea{
+/*     display: grid;
+    grid-template-columns: repeat(4, 23%);
+    aspect-ratio: 1/1;
+    gap: 2%;  */
+    display: flex;
+    flex-wrap:wrap;
+
+
+}
+div {
+    aspect-ratio: 1/1;
+    background-color: aquamarine;     
+
+} 
