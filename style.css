@@ -10,13 +10,15 @@
 }
 .gridDivs {
     aspect-ratio: 1/1;
-    background-color: aquamarine;     
+    background-color: lightgrey; 
 
 } 
 
 .changeColor {
-    background-color: black;
+    background-color: gray;
 }
+
+
 
 section {
     text-align: center;
