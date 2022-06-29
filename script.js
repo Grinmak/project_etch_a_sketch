@@ -44,14 +44,12 @@
     userInput();
 
     function grid16 (){
-
-
         for(let i=0; i<gridItems; i++){
             const onePiece = document.createElement('div');
             onePiece.setAttribute('class', 'gridDivs');
             onePiece.setAttribute('style', `min-width: ${gridWidth}%`);
             mainArea.appendChild(onePiece);
-            console.log(gridWidth);
+            //console.log(gridWidth);
         } 
         const allDivs = document.getElementById('grid').querySelectorAll('div');
         allDivs.forEach(div => div.addEventListener('mouseover', changeColor));
@@ -59,7 +57,15 @@
   
 
 
-    function changeColor (){
-        this.classList.add('changeColor');
-        
+    function changeColor (a){ 
+        let b = a.target; 
+        let colorPreFix = 'rgba';
+        let colorRGB = '0,0,0,';
+        let colorPerc = '10%';
+        if (b.style.backgroundColor){
+           // console.log(color);
+        }else { 
+         b.style.backgroundColor = colorPreFix + '(' + colorRGB +  colorPerc +')' ;
+         }
+
     };
