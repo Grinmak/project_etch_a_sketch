@@ -59,13 +59,18 @@
 
     function changeColor (a){ 
         let b = a.target; 
-        let colorPreFix = 'rgba';
-        let colorRGB = '0,0,0,';
-        let colorPerc = '10%';
+        let colorPreFix = 'rgb';
+        let colorR = Math.floor(Math.random()*256) + ',';
+        let colorG = Math.floor(Math.random()*256) + ',';
+        let colorB = Math.floor(Math.random()*256);
+        let colorRGB = colorR + colorG + colorB;
+        //let colorPerc = 100;
+        
         if (b.style.backgroundColor){
-           // console.log(color);
+         //  colorPerc = 60;
+        // b.style.backgroundColor = colorPreFix + '(' + colorRGB + ')' ; //change color in fired cells
         }else { 
-         b.style.backgroundColor = colorPreFix + '(' + colorRGB +  colorPerc +')' ;
-         }
+         b.style.backgroundColor = colorPreFix + '(' + colorRGB + ')' ;
+        }
 
     };
